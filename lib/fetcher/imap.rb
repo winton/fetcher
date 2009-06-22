@@ -61,6 +61,7 @@ module Fetcher
       @connection.expunge
       @connection.logout
       @connection.disconnect
+    rescue
     end
     
     def add_to_processed_folder(uid)
