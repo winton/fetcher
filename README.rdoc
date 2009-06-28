@@ -15,7 +15,7 @@ Install using:
 
 == Notice
 
-This is a fork of {look}[http://github.com/look]'s {fetcher}[http://github.com/look/fetcher].
+This is a fork of {fetcher}[http://github.com/look/fetcher] by {Luke Francl}[http://github.com/look].
 
 Differences:
 
