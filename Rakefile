@@ -1,9 +1,17 @@
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
+require 'gemspec'
 
 desc 'Default: run unit tests.'
 task :default => :test
+
+desc "Generate gemspec"
+task :gemspec do
+  File.open("#{Dir.pwd}/#{GEM_NAME}.gemspec", 'w') do |f|
+    f.write(GEM_SPEC.to_ruby)
+  end
+end
 
 desc 'Test the fetcher plugin.'
 Rake::TestTask.new(:test) do |t|
