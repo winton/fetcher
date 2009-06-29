@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{fetcher}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Luke Francl"]
-  s.date = %q{2009-06-27}
+  s.date = %q{2009-06-28}
   s.email = %q{look@recursion.org}
   s.extra_rdoc_files = ["README.rdoc"]
   s.files = ["fetcher.gemspec", "gemspec.rb", "init.rb", "lib", "lib/fetcher", "lib/fetcher/base.rb", "lib/fetcher/imap.rb", "lib/fetcher/pop.rb", "lib/fetcher.rb", "lib/vendor", "lib/vendor/plain_imap.rb", "lib/vendor/secure_pop.rb", "MIT-LICENSE", "Rakefile", "README.rdoc", "test", "test/fetcher_test.rb"]
