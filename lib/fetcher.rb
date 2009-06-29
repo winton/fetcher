@@ -11,6 +11,7 @@ module Fetcher
   # Fetcher.create(:type => :pop) is equivalent to
   # Fetcher::Pop.new()
   def self.create(options={})
+    options = options.dup
     klass = options.delete(:type)
     raise ArgumentError, 'Must supply a type' unless klass
     module_eval "#{klass.to_s.capitalize}.new(options)"
